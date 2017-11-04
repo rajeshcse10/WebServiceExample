@@ -15,6 +15,7 @@
 		18E88F001FA442EE00AB09BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E88EFE1FA442EE00AB09BD /* LaunchScreen.storyboard */; };
 		18E88F0B1FA442EE00AB09BD /* WebServiceExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E88F0A1FA442EE00AB09BD /* WebServiceExampleTests.m */; };
 		18E88F161FA442EE00AB09BD /* WebServiceExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E88F151FA442EE00AB09BD /* WebServiceExampleUITests.m */; };
+		18E88F261FA44A3200AB09BD /* GoogleService-Info 11.15.53 AM.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18E88F251FA44A3200AB09BD /* GoogleService-Info 11.15.53 AM.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		18E88F111FA442EE00AB09BD /* WebServiceExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebServiceExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E88F151FA442EE00AB09BD /* WebServiceExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebServiceExampleUITests.m; sourceTree = "<group>"; };
 		18E88F171FA442EE00AB09BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E88F251FA44A3200AB09BD /* GoogleService-Info 11.15.53 AM.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info 11.15.53 AM.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				18E88EF91FA442EE00AB09BD /* Main.storyboard */,
 				18E88EFC1FA442EE00AB09BD /* Assets.xcassets */,
 				18E88EFE1FA442EE00AB09BD /* LaunchScreen.storyboard */,
+				18E88F251FA44A3200AB09BD /* GoogleService-Info 11.15.53 AM.plist */,
 				18E88F011FA442EE00AB09BD /* Info.plist */,
 				18E88EF01FA442EE00AB09BD /* Supporting Files */,
 			);
@@ -207,6 +210,7 @@
 				TargetAttributes = {
 					18E88EEC1FA442EE00AB09BD = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = YF9ES6Q873;
 						ProvisioningStyle = Automatic;
 					};
 					18E88F051FA442EE00AB09BD = {
@@ -249,6 +253,7 @@
 				18E88F001FA442EE00AB09BD /* LaunchScreen.storyboard in Resources */,
 				18E88EFD1FA442EE00AB09BD /* Assets.xcassets in Resources */,
 				18E88EFB1FA442EE00AB09BD /* Main.storyboard in Resources */,
+				18E88F261FA44A3200AB09BD /* GoogleService-Info 11.15.53 AM.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,9 +431,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YF9ES6Q873;
 				INFOPLIST_FILE = WebServiceExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SRBD.WebServiceExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.WebServiceExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -437,9 +443,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YF9ES6Q873;
 				INFOPLIST_FILE = WebServiceExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SRBD.WebServiceExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.WebServiceExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -509,6 +516,7 @@
 				18E88F1C1FA442EE00AB09BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18E88F1D1FA442EE00AB09BD /* Build configuration list for PBXNativeTarget "WebServiceExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +525,7 @@
 				18E88F1F1FA442EE00AB09BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18E88F201FA442EE00AB09BD /* Build configuration list for PBXNativeTarget "WebServiceExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +534,7 @@
 				18E88F221FA442EE00AB09BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

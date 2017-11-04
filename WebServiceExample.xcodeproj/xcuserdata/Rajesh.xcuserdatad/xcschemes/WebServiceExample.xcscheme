@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "18E88EEC1FA442EE00AB09BD"
+               BuildableName = "WebServiceExample.app"
+               BlueprintName = "WebServiceExample"
+               ReferencedContainer = "container:WebServiceExample.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "18E88F051FA442EE00AB09BD"
+               BuildableName = "WebServiceExampleTests.xctest"
+               BlueprintName = "WebServiceExampleTests"
+               ReferencedContainer = "container:WebServiceExample.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "18E88F101FA442EE00AB09BD"
+               BuildableName = "WebServiceExampleUITests.xctest"
+               BlueprintName = "WebServiceExampleUITests"
+               ReferencedContainer = "container:WebServiceExample.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "18E88EEC1FA442EE00AB09BD"
+            BuildableName = "WebServiceExample.app"
+            BlueprintName = "WebServiceExample"
+            ReferencedContainer = "container:WebServiceExample.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "18E88EEC1FA442EE00AB09BD"
+            BuildableName = "WebServiceExample.app"
+            BlueprintName = "WebServiceExample"
+            ReferencedContainer = "container:WebServiceExample.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "18E88EEC1FA442EE00AB09BD"
+            BuildableName = "WebServiceExample.app"
+            BlueprintName = "WebServiceExample"
+            ReferencedContainer = "container:WebServiceExample.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
