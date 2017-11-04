@@ -16,7 +16,7 @@ static NSString *api_key = @"AIzaSyBq9R7SSLKp9CeyhGPU6WM8y96qjJbLdao";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self makePOSTReguest];
+    [self readSpecificDataCorrespondsToID];
 }
 -(void) makeGETReguest1{
     NSString *urlString = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=%@",api_key];
@@ -36,7 +36,7 @@ static NSString *api_key = @"AIzaSyBq9R7SSLKp9CeyhGPU6WM8y96qjJbLdao";
     }];
     [dataTask resume];
 }
--(void) makeGETReguest2{
+-(void) readAllDataFromServer{
     NSString *urlString = @"http://192.168.0.100:1234/luka_api/read.php";
     NSURL *url = [NSURL URLWithString:urlString];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
@@ -54,7 +54,27 @@ static NSString *api_key = @"AIzaSyBq9R7SSLKp9CeyhGPU6WM8y96qjJbLdao";
     }];
     [dataTask resume];
 }
--(void)makePOSTReguest{
+-(void) readSpecificDataCorrespondsToID{
+    NSURLComponents *components = [NSURLComponents componentsWithString:@"http://192.168.0.100:1234/luka_api/read_one.php"];
+    NSURLQueryItem *search = [NSURLQueryItem queryItemWithName:@"id" value:@"70"];
+    components.queryItems = @[search];
+    NSURL *url = components.URL;
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+    [request setURL:url];
+    [request setHTTPMethod:@"GET"];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    NSURLSession *session  = [NSURLSession sharedSession];
+    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        NSHTTPURLResponse *urlRes = (NSHTTPURLResponse *) response;
+        if(urlRes.statusCode == 200){
+            NSError *err = nil;
+            NSDictionary *responseDic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&err];
+            NSLog(@"%@",responseDic);
+        }
+    }];
+    [dataTask resume];
+}
+-(void)sendObjectToServer{
     NSString *urlString = @"http://192.168.0.100:1234/luka_api/create.php";
     NSURL *url = [NSURL URLWithString:urlString];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
